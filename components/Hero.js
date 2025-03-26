@@ -3,8 +3,9 @@ import React from "react";
 import { useState, useEffect } from "react";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faMoon, faWandMagicSparkles } from "@fortawesome/free-solid-svg-icons";
-
 import { faStar } from "@fortawesome/free-regular-svg-icons";
+import Link from "next/link";
+import Image from "next/image";
 
 const Hero = () => {
   const [showModal, setShowModal] = useState(false);
@@ -58,10 +59,12 @@ const Hero = () => {
       )}
       <section className="pt-24 h-[500px] relative overflow-hidden">
         <div className="absolute inset-0 z-0">
-          <img
+          <Image
             className="w-full h-full object-cover object-center "
             src="/masjid.jpg"
             alt="Masjid background"
+            width={1920}
+            height={1080}
           />
           <div className="absolute inset-0 bg-black/40"></div>
         </div>
@@ -83,7 +86,7 @@ const Hero = () => {
 
             {/* Action Buttons */}
             <div className="flex justify-center gap-4 animate-slideUp">
-              <a href="/game">
+              <Link href="/game">
                 {" "}
                 <button
                   className="bg-emerald-600 text-white px-6 py-3 rounded-full hover:bg-emerald-700 
@@ -99,7 +102,7 @@ const Hero = () => {
                     ✨
                   </span>
                 </button>
-              </a>
+              </Link>
             </div>
           </div>
         </div>

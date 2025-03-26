@@ -3,6 +3,7 @@
 import React, { useState } from "react";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faMoon, faBars, faTimes } from "@fortawesome/free-solid-svg-icons";
+import Link from "next/link";
 
 const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);
@@ -45,14 +46,14 @@ const Navbar = () => {
                 : "invisible opacity-0 -translate-y-5"
             } md:visible md:opacity-100 md:translate-y-0`}>
             {navItems.map((item, index) => (
-              <a
+              <Link
                 key={item.name}
                 href={item.path}
                 className="group relative text-gray-600 hover:text-emerald-600 transition-all duration-300"
                 style={{ transitionDelay: `${isOpen ? index * 100 : 0}ms` }}>
                 {item.name}
                 <span className="absolute bottom-0 left-0 w-0 h-0.5 bg-emerald-600 transition-all duration-300 group-hover:w-full" />
-              </a>
+              </Link>
             ))}
           </div>
         </nav>

@@ -1,6 +1,7 @@
 import React from "react";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faArrowRight } from "@fortawesome/free-solid-svg-icons";
+import Link from "next/link";
 
 const Features = ({ features }) => {
   return (
@@ -27,12 +28,12 @@ const Features = ({ features }) => {
                 <p className="text-gray-600 mb-4 animate-fadeIn">
                   {feature.description}
                 </p>
-                <a
+                <Link
                   href={feature.link}
                   className="text-emerald-600 hover:text-emerald-700 transition-colors hover:translate-x-2 duration-300 flex items-center">
                   Try it{" "}
                   <FontAwesomeIcon icon={faArrowRight} className="ml-2" />
-                </a>
+                </Link>
               </div>
             ))}
           </div>

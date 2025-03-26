@@ -2,13 +2,14 @@ import React from "react";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faMoon } from "@fortawesome/free-solid-svg-icons";
 import { faGithub, faLinkedin } from "@fortawesome/free-brands-svg-icons";
+import Link from "next/link";
 
 const Footer = () => {
   return (
     <>
       <footer className="bg-emerald-900 text-white py-12 mt-20">
         <div className="container mx-auto px-4">
-          <div className="grid md:grid-cols-4 grid-cols-2 gap-8">
+          <div className="grid md:grid-cols-3 grid-cols-2 gap-8 place-content-center place-items-center">
             {/* Brand Column */}
             <div>
               <div className="flex items-center space-x-2 mb-4">
@@ -25,25 +26,25 @@ const Footer = () => {
               <h4 className="font-bold mb-4">Features</h4>
               <ul className="space-y-2">
                 <li>
-                  <a
+                  <Link
                     href="/game"
                     className="text-emerald-200 hover:text-white transition-colors">
                     Eidi Generator
-                  </a>
+                  </Link>
                 </li>
                 <li>
-                  <a
+                  <Link
                     href="/quiz"
                     className="text-emerald-200 hover:text-white transition-colors">
                     Quiz Game
-                  </a>
+                  </Link>
                 </li>
                 <li>
-                  <a
+                  <Link
                     href="/good-deed"
                     className="text-emerald-200 hover:text-white transition-colors">
                     Good Deed
-                  </a>
+                  </Link>
                 </li>
               </ul>
             </div>
@@ -52,18 +53,18 @@ const Footer = () => {
             <div>
               <h4 className="font-bold mb-4">Connect</h4>
               <div className="flex space-x-4">
-                <a
+                <Link
                   href="https://github.com/aushah1"
                   target="_main"
                   className="text-emerald-200 hover:text-white transition-colors">
                   <FontAwesomeIcon icon={faGithub} className="text-2xl" />
-                </a>
-                <a
+                </Link>
+                <Link
                   href="https://www.linkedin.com/in/aushahgw"
                   target="_main"
                   className="text-emerald-200 hover:text-white transition-colors">
                   <FontAwesomeIcon icon={faLinkedin} className="text-2xl" />
-                </a>
+                </Link>
               </div>
             </div>
           </div>
