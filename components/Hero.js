@@ -50,7 +50,7 @@ const Hero = () => {
               <button
                 className="bg-emerald-600 text-white px-8 py-3 rounded-lg hover:bg-emerald-700 transition-all hover:scale-105 transform w-full"
                 onClick={handleCelebrate}>
-                Let's Celebrate!{" "}
+                Let&apos;s Celebrate!{" "}
                 <FontAwesomeIcon icon={faWandMagicSparkles} className="ml-2" />
               </button>
             </div>
