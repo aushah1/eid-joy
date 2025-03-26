@@ -137,12 +137,12 @@ const Game = () => {
               <h2 className="text-2xl font-bold mb-4">Choose One Option:</h2>
               <button
                 onClick={() => handleChoice("take")}
-                className="w-full bg-emerald-600 text-white py-3 rounded-xl mb-4 hover:bg-emerald-700 transition-colors">
+                className="w-full cursor-pointer bg-emerald-600 text-white py-3 rounded-xl mb-4 hover:bg-emerald-700 transition-colors">
                 I take Eidi
               </button>
               <button
                 onClick={() => handleChoice("give")}
-                className="w-full bg-amber-500 text-white py-3 rounded-xl hover:bg-amber-600 transition-colors">
+                className="w-full cursor-pointer bg-amber-500 text-white py-3 rounded-xl hover:bg-amber-600 transition-colors">
                 I give Eidi
               </button>
             </div>
@@ -182,7 +182,7 @@ const Game = () => {
 
         <div className="button flex justify-center mt-10">
           <button
-            className="bg-emerald-600 text-white py-3 rounded-xl hover:bg-emerald-700 transition-colors px-10"
+            className="bg-emerald-600 cursor-pointer text-white py-3 rounded-xl hover:bg-emerald-700 transition-colors px-10"
             onClick={handleTryAgain}>
             TRY AGAIN !
           </button>

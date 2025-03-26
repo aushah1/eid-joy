@@ -53,7 +53,7 @@ const GoodDeed = () => {
             <div className="flex justify-center gap-4 animate-slideUp">
               <button
                 onClick={generateDeed}
-                className="bg-emerald-600 text-white px-8 py-4 rounded-full hover:bg-emerald-700 
+                className="cursor-pointer bg-emerald-600 text-white px-8 py-4 rounded-full hover:bg-emerald-700 
                 transition-all hover:scale-105 transform flex items-center
                 shadow-lg hover:shadow-emerald-200/40 
                 hover:-translate-y-1 duration-300 group">

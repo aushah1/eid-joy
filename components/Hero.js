@@ -86,13 +86,13 @@ const Hero = () => {
 
             {/* Action Buttons */}
             <div className="flex justify-center gap-4 animate-slideUp">
-              <Link href="/game">
+              <Link href="/game" className="cursor-pointer">
                 {" "}
                 <button
                   className="bg-emerald-600 text-white px-6 py-3 rounded-full hover:bg-emerald-700 
     transition-all hover:scale-105 transform flex items-center
     shadow-lg hover:shadow-emerald-200/40 
-    hover:-translate-y-1 duration-300 group">
+    hover:-translate-y-1 duration-300 group cursor-pointer">
                   <FontAwesomeIcon
                     icon={faWandMagicSparkles}
                     className="mr-2 group-hover:rotate-45 transition-transform duration-500"

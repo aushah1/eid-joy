@@ -20,14 +20,16 @@ const Navbar = () => {
       <div className="container mx-auto px-4 py-3">
         <nav className="flex items-center justify-between relative">
           {/* Logo with hover animation */}
-          <div className="flex items-center space-x-1 hover:-translate-y-1 transition-transform duration-200">
-            <FontAwesomeIcon
-              icon={faMoon}
-              className="text-emerald-600 text-3xl hover:rotate-12 transition-transform duration-300"
-            />
-            <span className="text-4xl font-bold text-emerald-600">Eid</span>
-            <span className="text-4xl font-bold text-emerald-500">Joy</span>
-          </div>
+          <Link href="/">
+            <div className="flex items-center space-x-1 hover:-translate-y-1 transition-transform duration-200 cursor-pointer">
+              <FontAwesomeIcon
+                icon={faMoon}
+                className="text-emerald-600 text-3xl hover:rotate-12 transition-transform duration-300"
+              />
+              <span className="text-4xl font-bold text-emerald-600">Eid</span>
+              <span className="text-4xl font-bold text-emerald-500">Joy</span>
+            </div>
+          </Link>
 
           {/* Animated Hamburger button */}
           <button

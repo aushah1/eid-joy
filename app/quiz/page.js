@@ -92,10 +92,10 @@ const Quiz = () => {
                   Eid Quiz Time, {userName}!
                 </h1>
                 <div className="mt-4 flex justify-center items-center gap-4">
-                  <span className="bg-emerald-100 text-emerald-800 px-4 py-1 rounded-full">
+                  <span className="bg-emerald-100 text-emerald-800 cursor-pointer px-4 py-1 rounded-full">
                     Question {currentQuestion + 1}/{quizQuestions.length}
                   </span>
-                  <span className="bg-yellow-100 text-yellow-800 px-4 py-1 rounded-full">
+                  <span className="bg-yellow-100 text-yellow-800 cursor-pointer px-4 py-1 rounded-full">
                     Score: {score}
                   </span>
                 </div>
@@ -111,7 +111,7 @@ const Quiz = () => {
                     (option, index) => (
                       <button
                         key={index}
-                        className={`p-4 text-left rounded-xl border-2 transition-all 
+                        className={`p-4 text-left rounded-xl cursor-pointer border-2 transition-all 
                         ${
                           selectedAnswer !== null
                             ? index === quizQuestions[currentQuestion].correct
